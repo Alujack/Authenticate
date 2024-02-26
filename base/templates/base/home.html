@@ -1,0 +1,9 @@
+{% extends "main.html" %}
+{% block content %}
+<p>
+    {% for user in users %}
+    {{user.email}} <hr>
+    {% endfor %}
+</p>
+<a href="{% url 'logOut' %}">logout</a>
+{% endblock %}
